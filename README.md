@@ -1,4 +1,4 @@
-# NLP_Cross_Professional_Learning
+# NLP_Learning_by_Selective_Data
 
 This project uses NLP abstractive summarization task to explore cross-field training and its effect on the model's capabilities, the result sheds light to ustilizing training data selection to teach models specific skill sets.
 
