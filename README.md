@@ -1,6 +1,6 @@
 # NLP_Cross_Professional_Learning
 
-This project uses NLP abstractive summarization task to explore cross-field training and its effect on the model's capabilities, the result sgeds light to ustilizing training data selection to teach models specific skill sets.
+This project uses NLP abstractive summarization task to explore cross-field training and its effect on the model's capabilities, the result sheds light to ustilizing training data selection to teach models specific skill sets.
 
 In this experiement, BERT-based language model if finetuned to predict title given a body of context.
 
