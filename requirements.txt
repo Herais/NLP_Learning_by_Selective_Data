@@ -1,0 +1,105 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Open.ipynb",
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "J6SND0npASiN",
+        "outputId": "6480c07c-4a47-4203-c28a-5aaf25ac84b9"
+      },
+      "source": [
+        "# Mount Google Drive\n",
+        "from google.colab import drive\n",
+        "drive.mount('/content/drive')\n",
+        "\n",
+        "# Navigate to project directory\n",
+        "import os\n",
+        "path_github   = '/content/drive/MyDrive/Github'\n",
+        "os.chdir(path_github)\n",
+        "\n",
+        "# git clone\n",
+        "#!git clone https://github.com/Herais/NLP_Learning_by_Selective_Data.git\n",
+        "path_wd = path_github + '/' + 'NLP_Learning_by_Selective_Data'\n",
+        "os.chdir(path_wd)\n",
+        "!pwd"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Mounted at /content/drive\n",
+            "/content/drive/MyDrive/Github/NLP_Learning_by_Selective_Data\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "3-lUgX-tsT9Q"
+      },
+      "source": [
+        "# INSTALL REQUIRED Packages\n",
+        "!pip install -r requirements.txt\n",
+        "%tensorflow_version 1.x"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "jZ2UpzSQ2u5v"
+      },
+      "source": [
+        "# INSTALL AND DOWNLOAD DATASET"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Xpzb_n4g__-W",
+        "outputId": "bcfb46b1-21f4-458f-a97f-e1ce1a963ba1"
+      },
+      "source": [
+        "# LOAD AND EXPLORE DATA\n",
+        "\n",
+        "# Data Path"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "NLP_SelectiveTrainingData_Learning  Open.ipynb\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
