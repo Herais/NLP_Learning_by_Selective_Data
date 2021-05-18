@@ -1,8 +1,10 @@
 # NLP_Cross_Professional_Learning
 
-This project uses NLP abstractive summarization task to explore cross-field training and its effect on the model's capabilities. The task here is for the language model to predict a title given a body of content.
+This project uses NLP abstractive summarization task to explore cross-field training and its effect on the model's capabilities, the result sgeds light to ustilizing training data selection to teach models specific skill sets.
 
-In the experiment, we trained three models using the same algorithm and based off the same pretrained BERT model:
+In this experiement, BERT-based language model if finetuned to predict title given a body of context.
+
+In the experiment, three models were trained using the same algorithm and based off the same pretrained BERT model:
  (1) The Star-chaser Model - a model trained solely with short movie synopsis and movie titles;
  (2) The Scholar Model - a model trained solely with the content of scientific research papers and their titles;
  (3) The Know-it-all Model -  a model trained with both training sets from (1) and (2） above.
@@ -15,12 +17,12 @@ After training, the following predictions are performed:
  (5) use the Know-it-all Model to predict movie titles;
  (6) use the Know-it-all Model to predict researachh paper titles.
  
-While as expected that the Star-chaser Model performs poorly on predicting research paper titles and that the Scholar Model performs poorly on predicting movie titles, something interesting occured. The Star-chaser Model's predicted research paper titles are highly fluent while the Scholar Model's predicted movie titles often make no sense. This suggests that by learning from the movie dataset, the model acquires some kind of readibility skill. This ability is preserved in the Know-it-all Model, when using the Know-it-all model to predict research paper titles, the model predicts on par iwth the Scholar Model, witht e
+While as expected that the Star-chaser Model performs poorly on predicting research paper titles and that the Scholar Model performs poorly on predicting movie titles, something interesting occured. The Star-chaser Model's predicted research paper titles are highly fluent while the Scholar Model's predicted movie titles often make no sense. This suggests that by learning from the movie dataset, the model acquires some kind of readibility skill. This ability is preserved in the Know-it-all Model, when using the Know-it-all model to predict research paper titles, the model predicts on par iwth the Scholar Model, with the added benefit of fluency.
 
-This skill is preserved when applying the model to a drastically different field.
-This brings some, rather than pouring datasets into the model, is there a way to train the model in a structured way with , just like how we learn in school, taking courses class by class, with each classes teaching us a focused set of skills.
+Following the observations from above, more questions are raised pertaining to training data selection,
+ (1) how would the model perform if we teach it once 'class' at a time, with each class focusing on a different set of skills?
+ (2) can a skill be preserved once learned and not adversely affected by continued training?
 
 
-The skill-specific training idea is inspired by observations from my previous paper, with only uses datasets in simplied Chinese.
+The skillset-specific training idea is inspired by observations from my previous paper, which used only simplied Chinese datasets, and performed only prediction (1)、（2）、（4）、（5） and （6） outlined above.
 [1]徐宵宁.自然语言处理之生成式短摘要预测电影片名[J].休闲,2020(24):0077-0080.
-
